@@ -137,7 +137,9 @@ describe('Node', () => {
 			const child = new Node(42, 15);
 
 			parentOfParent.appendChild(parent);
+
 			parent.appendChild(child);
+
 			child.swapWithParent();
 
 			expect(child.parent).to.equal(parentOfParent);
